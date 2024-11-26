@@ -289,7 +289,7 @@ func (s *Server) serveSearchErr(r *http.Request) (*ApiSearchResult, error) {
 	}
 
 	sOpts := zoekt.SearchOptions{
-		MaxWallTime: 10 * time.Second,
+		MaxWallTime: 5 * time.Second,
 	}
 
 	numCtxLines := 0
